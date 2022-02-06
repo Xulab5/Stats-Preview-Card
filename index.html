@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@100;200;300;400;800;900&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{background-color: hsl(233, 47%, 7%);color:hsl(0, 0%, 100%); display: grid; place-items: center; height: 100vh; margin:0px; padding:0px;}
+    .card{background-color: hsl(244, 38%, 16%); border-radius: 10px;}
+    .img-container img { border-top-left-radius: 10px;border-top-right-radius: 10px;}
+    .card-title span{color: hsl(277, 64%, 61%);}
+    .card-text{color: hsla(0, 0%, 100%, 0.75);}
+    .summary-stat span{color:hsla(0, 0%, 100%, 0.6) ;}
+    .fs-6{font-size: .8rem!important;}
+    .img-container{position:relative}
+    .img-container::before{
+      content: "";
+      position: absolute;
+      background-color: hsl(277deg 64% 61% / 50%);
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    @media (min-width:768px) {
+      .img-container img,.img-container::before { border-top-left-radius: 0px; border-bottom-right-radius: 10px; }
+      .attribution{position: absolute; bottom:0;}
+      
+    }
+  </style>
+</head>
+<body>
+<div class="container my-5">
+<div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-md-6 img-container d-block d-md-none">
+      <img src="images/image-header-mobile.jpg" class="img-fluid" alt="student image">
+    </div>
+    <div class="col-md-6 content-con p-lg-4 p-xl-5 d-xl-flex align-items-xl-center">
+      <div class="card-body text-center text-lg-start p-4 pt-xl-4 pe-xl-5">
+        <h1 class="card-title fw-bolder">Get <span>insights</span> that help your business grow.</h1>
+        <p class="card-text mt-4 mb-5 pe-xl-5">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+        <div class="summary-stat text-uppercase d-lg-flex justify-content-lg-between pe-xl-5 me-xl-5">
+          <div class="my-4"><h4 class="fw-bold m-0">10k+</h4> <span class="fs-6">companies</span></div>
+          <div class="my-4"><h4 class="fw-bold m-0">314</h4> <span class="fs-6">templates</span></div>
+          <div class="my-lg-4"><h4 class="fw-bold m-0">12m+</h4> <span class="fs-6">queries</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 img-container d-none d-md-block">
+      <img src="images/image-header-desktop.jpg" class="img-fluid w-100 h-100" alt="student image">
+    </div>
+  </div>
+</div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Xulab</a>.
+  </div>
+</body>
+</html>        
