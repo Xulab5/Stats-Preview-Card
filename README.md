@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Stats Preview Card](https://your-live-site-url.com)
+- Live Site URL: [Stats Preview Card](https://xulab5.github.io/Stats-Preview-Card/)
 
 ### Built with
 
